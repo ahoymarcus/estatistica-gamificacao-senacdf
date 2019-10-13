@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Aprendizado em Estatística Aplicada com Gamificação</title>
+	
+	<style>
+		body { background-image: linear-gradient(to bottom, rgba(250, 240, 230,0.3), rgba(255, 165, 0,0.2)); /*linen, orange*/}
+		
+		header { height: 490px; background-image: linear-gradient(to bottom, white 5%,rgba(255, 235, 59,0.4) 90%, white); color: tomato; }
+		header h1 { padding: 10px 15px 10px 25px; }
+		header .trofeu { height: 75px; width: 70%; background-color: white; border-radius: 50px; margin-left: 5px; padding-left: 10px; }
+		#trofeu, header .trofeu { position: relative; top: 35px; }
+		header div img { width: 15%; padding: 15px; }
+		
+		
+		.login img { width: 6%; padding-bottom: 30px; }
+		.img-thumb { display: inline; border-radius: 20px; }
+		header a, header span { padding-left: 5px;}
+		header span { font-weight: bold; font-size: 1.5em; color: orangered; }
+		/*Media Query*/
+		@media only screen and (min-width: 700px){
+			.login img { width: 4%; }
+			header div img { width: 12%; }
+		}
+		@media only screen and (min-width: 910px) {
+			.login img { width: 3%; }
+			header div img { width: 7.5%; }
+		}
+    @media only screen and (min-width: 1500px){
+      .login img { width: 2%; }
+			header div img { width: 6.5%; }
+    }
+		
+		
+		/* Barra de progresso*/
+		.barra-progresso {
+			width: 90%;
+			height: 20px;
+			position: relative;
+			background: #8c4848;
+			-moz-border-radius: 25px;
+			-webkit-border-radius: 25px;
+			border-radius: 25px;
+			/*padding: 10px;*/
+			margin-left: 5px; 
+			box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+		}
+		.barra-progresso > span {
+			display: block;
+			height: 100%;
+			border-top-right-radius: 8px;
+			border-bottom-right-radius: 8px;
+			border-top-left-radius: 20px;
+			border-bottom-left-radius: 20px;
+			background-color: rgba(255,168,52,1);
+			background-image: 
+			linear-gradient(center bottom,
+			rgb(43,194,83) 37%, rgb(84,240,84) 69%);
+			box-shadow: 
+				inset 0 2px 9px rgba(255,255,255,0.3),
+				inset 0 -2px 6px rgba(0,0,0,0.4);
+			position: relative;
+			overflow: hidden;
+			
+		}
+		.progresso { width: 45%; }
+		
+		
+		
+		main { background-image: linear-gradient(white, linen); /*white #FFEB3B*/ }
+		.main { padding: 30px 40px 40px 70px; }
+		main dt { 
+			background-color: white; border: 1px solid rgba(255, 165, 0, 0.37); border-radius: 8px; padding: 10px; width: 23%; margin-top: 40px; 
+			transition-property: background-color; transition-duration: 2s;
+			transition-timing-function: linear;
+			transition-delay: 0.2s;
+		}
+		main dt:hover { background-color: #FFEB3B; }
+		main h2 { color: orangered; }
+		main dt a, .nav ul li a { font-weight: bolder; text-decoration: none; }
+    main dt a { color: #b9812e; }
+    
+		main dd, .nav ul li a { color: #752a43; }
+    
+    .nav ul { list-style: none; }
+    .nav ul li { padding-top: 15px; }
+    .grad-disciplinas { 
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .disciplinas-a:hover { border: 0.2px dotted rgba(0,0,0,.1); }
+    
+	</style>
+</head>
+
+<body>
+<header>
+	<h1>Aprendizado em Estatística Aplicada com Gamificação</h1>
+	
+	<div class="login">
+	<a href="">Login</a><br />
+		<div class="img-thumb">
+			<img src="imagens\marcus_vinícius_self-small.jpg" alt="" />
+		</div>	
+	</div>
+	
+	<div class="score">
+		<span>SCORE: 352 pontos</span>
+		<div class="barra-progresso">
+			<span class="progresso"></span>
+		</div>
+	</div>
+	<span id="trofeu">TROFÉUS:</span><br />
+	<div class="trofeu">
+		<div class="img-thumb">
+			<img src="imagens\th_msx0110.jpg" alt="" />
+		</div>
+		<div class="img-thumb">
+			<img src="imagens\pitfall.jpg" alt="" />
+		</div>
+		<div class="img-thumb">	
+			<img src="imagens\nemesiss_03.jpg" alt="" />
+		</div>
+	</div>
+	
+</header>
+<main>
+<div class="main">
+  <nav class="nav">
+  
+  </nav>
+  
+  <h2>Disciplinas de Estatística:</h2>
+  
+  <div class="grad-disciplinas">
+    <div class="nav disciplinas-a">
+      <ul>
+        <li><a href="">Resumo de Dados</a></li>
+        <li><a href="">Medidas de Resumo</a></li>
+        <li><a href="">Análise Bidimensional</a></li>
+        <li><a href="">Probabilidade</a></li>
+        <li><a href="">Variáveis Aleatórias Discretas</a></li>
+        <li><a href="">Variáveis Aleatórias Contínuas</a></li>
+        <li><a href="">Variáveis Aleatórias Multidimensionais</a></li>
+        <li><a href="">Noções de Simulação</a></li>
+        <li><a href="">Introdução à Inferência Estatística</a></li>
+        <li></li>
+      </ul>
+    </div>
+    <div class="nav disciplinas-b">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </div> 
+    
+      
+	
+	<dl>
+	<dt><a href="">Resumo de Dados</a></dt>
+	<dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque, dolor ac suscipit volutpat, urna odio suscipit tortor, ut condimentum metus nulla sodales nisl. Nullam porttitor finibus metus ut faucibus. Pellentesque molestie pulvinar velit, et congue sem efficitur quis. Nunc in tempor libero, eu elementum nisl. Suspendisse eget dolor maximus, vulputate tortor ut, ornare turpis. Integer in gravida neque, vel vestibulum turpis. </dd>
+	<dt><a href="">Medidas de Resumo</a></dt>
+	<dd>Aliquam eu tincidunt lorem. Quisque consectetur urna quis velit mattis, in rutrum nunc dignissim. Vivamus non finibus ligula, id semper dui. Proin in arcu augue. Donec convallis justo et arcu egestas lacinia. Integer pulvinar malesuada nisl, sit amet scelerisque massa pharetra non. Vivamus ut libero iaculis erat lobortis condimentum. Vivamus vel sapien dui. Vivamus ut sodales quam. Nam commodo rhoncus lacinia. Quisque at fringilla est.</dd>
+	<dt><a href="">Análise Bidimensional</a></dt>
+	<dd>Duis eget dui non orci consectetur mattis. Quisque eget risus faucibus, lacinia erat vehicula, ornare lectus. Nullam sit amet pharetra justo, sed vestibulum est. Sed felis libero, scelerisque et molestie in, sollicitudin sit amet leo. Vestibulum placerat ullamcorper mi, ac dictum nulla commodo vitae. Proin est libero, varius eleifend malesuada vel, maximus ornare enim. Donec dapibus eget felis et fringilla.</dd>
+	<dt><a href="">Probabilidade</a></dt>
+	<dd>Donec euismod magna augue, sed euismod sapien elementum ut. Vestibulum scelerisque in libero non hendrerit. Nunc tincidunt ligula efficitur porta interdum. Vivamus arcu ex, vestibulum et sagittis non, laoreet a eros. Donec at nisl enim. Suspendisse at scelerisque augue, quis vestibulum tortor. Donec at egestas felis. Ut eget erat nibh.</dd>
+	<dt><a href="">Variáveis Aleatórias Discretas</a></dt>
+	<dd>Nam vestibulum ullamcorper lacus ac condimentum. Vestibulum rutrum purus ac purus molestie placerat. Maecenas eu iaculis nibh, vel venenatis orci. Nulla sed purus vel ex pharetra cursus. Nullam vel turpis vel leo vehicula aliquet. Integer facilisis semper orci, nec luctus nulla convallis hendrerit. Maecenas nulla elit, pharetra non urna ac, rhoncus pharetra risus. Curabitur gravida tristique sem vitae mattis.</dd>
+	<dt><a href="">Variáveis Aleatórias Contínuas</a></dt>
+	<dd>Nam vestibulum ullamcorper lacus ac condimentum. Vestibulum rutrum purus ac purus molestie placerat. Maecenas eu iaculis nibh, vel venenatis orci. Nulla sed purus vel ex pharetra cursus. Nullam vel turpis vel leo vehicula aliquet. Integer facilisis semper orci, nec luctus nulla convallis hendrerit. Maecenas nulla elit, pharetra non urna ac, rhoncus pharetra risus. Curabitur gravida tristique sem vitae mattis.</dd>
+	<dt><a href="">Variáveis Aleatórias Multidimensionais</a></dt>
+	<dd>Nam vestibulum ullamcorper lacus ac condimentum. Vestibulum rutrum purus ac purus molestie placerat. Maecenas eu iaculis nibh, vel venenatis orci. Nulla sed purus vel ex pharetra cursus. Nullam vel turpis vel leo vehicula aliquet. Integer facilisis semper orci, nec luctus nulla convallis hendrerit. Maecenas nulla elit, pharetra non urna ac, rhoncus pharetra risus. Curabitur gravida tristique sem vitae mattis.</dd>
+	<dt><a href="">Noções de Simulação</a></dt>
+	<dd>Nam vestibulum ullamcorper lacus ac condimentum. Vestibulum rutrum purus ac purus molestie placerat. Maecenas eu iaculis nibh, vel venenatis orci. Nulla sed purus vel ex pharetra cursus. Nullam vel turpis vel leo vehicula aliquet. Integer facilisis semper orci, nec luctus nulla convallis hendrerit. Maecenas nulla elit, pharetra non urna ac, rhoncus pharetra risus. Curabitur gravida tristique sem vitae mattis.</dd>
+	<dt><a href="">Introdução à Inferência Estatística</a></dt>
+	<dd>Nam vestibulum ullamcorper lacus ac condimentum. Vestibulum rutrum purus ac purus molestie placerat. Maecenas eu iaculis nibh, vel venenatis orci. Nulla sed purus vel ex pharetra cursus. Nullam vel turpis vel leo vehicula aliquet. Integer facilisis semper orci, nec luctus nulla convallis hendrerit. Maecenas nulla elit, pharetra non urna ac, rhoncus pharetra risus. Curabitur gravida tristique sem vitae mattis.</dd>
+	<dt><a href=""></a></dt>
+	<dd>Nam vestibulum ullamcorper lacus ac condimentum. Vestibulum rutrum purus ac purus molestie placerat. Maecenas eu iaculis nibh, vel venenatis orci. Nulla sed purus vel ex pharetra cursus. Nullam vel turpis vel leo vehicula aliquet. Integer facilisis semper orci, nec luctus nulla convallis hendrerit. Maecenas nulla elit, pharetra non urna ac, rhoncus pharetra risus. Curabitur gravida tristique sem vitae mattis.</dd>
+	<dt><a href=""></a></dt>
+	<dd>Nam vestibulum ullamcorper lacus ac condimentum. Vestibulum rutrum purus ac purus molestie placerat. Maecenas eu iaculis nibh, vel venenatis orci. Nulla sed purus vel ex pharetra cursus. Nullam vel turpis vel leo vehicula aliquet. Integer facilisis semper orci, nec luctus nulla convallis hendrerit. Maecenas nulla elit, pharetra non urna ac, rhoncus pharetra risus. Curabitur gravida tristique sem vitae mattis.</dd>
+	<dt><a href=""></a></dt>
+	<dd>Nam vestibulum ullamcorper lacus ac condimentum. Vestibulum rutrum purus ac purus molestie placerat. Maecenas eu iaculis nibh, vel venenatis orci. Nulla sed purus vel ex pharetra cursus. Nullam vel turpis vel leo vehicula aliquet. Integer facilisis semper orci, nec luctus nulla convallis hendrerit. Maecenas nulla elit, pharetra non urna ac, rhoncus pharetra risus. Curabitur gravida tristique sem vitae mattis.</dd>
+	<dt><a href=""></a></dt>
+	<dd>Nam vestibulum ullamcorper lacus ac condimentum. Vestibulum rutrum purus ac purus molestie placerat. Maecenas eu iaculis nibh, vel venenatis orci. Nulla sed purus vel ex pharetra cursus. Nullam vel turpis vel leo vehicula aliquet. Integer facilisis semper orci, nec luctus nulla convallis hendrerit. Maecenas nulla elit, pharetra non urna ac, rhoncus pharetra risus. Curabitur gravida tristique sem vitae mattis.</dd>
+	<dt><a href=""></a></dt>
+	<dd>Nam vestibulum ullamcorper lacus ac condimentum. Vestibulum rutrum purus ac purus molestie placerat. Maecenas eu iaculis nibh, vel venenatis orci. Nulla sed purus vel ex pharetra cursus. Nullam vel turpis vel leo vehicula aliquet. Integer facilisis semper orci, nec luctus nulla convallis hendrerit. Maecenas nulla elit, pharetra non urna ac, rhoncus pharetra risus. Curabitur gravida tristique sem vitae mattis.</dd>
+	<dt><a href=""></a></dt>
+	<dd>Nam vestibulum ullamcorper lacus ac condimentum. Vestibulum rutrum purus ac purus molestie placerat. Maecenas eu iaculis nibh, vel venenatis orci. Nulla sed purus vel ex pharetra cursus. Nullam vel turpis vel leo vehicula aliquet. Integer facilisis semper orci, nec luctus nulla convallis hendrerit. Maecenas nulla elit, pharetra non urna ac, rhoncus pharetra risus. Curabitur gravida tristique sem vitae mattis.</dd>
+	<dt><a href=""></a></dt>
+	<dd>Nam vestibulum ullamcorper lacus ac condimentum. Vestibulum rutrum purus ac purus molestie placerat. Maecenas eu iaculis nibh, vel venenatis orci. Nulla sed purus vel ex pharetra cursus. Nullam vel turpis vel leo vehicula aliquet. Integer facilisis semper orci, nec luctus nulla convallis hendrerit. Maecenas nulla elit, pharetra non urna ac, rhoncus pharetra risus. Curabitur gravida tristique sem vitae mattis.</dd>
+	<dt><a href=""></a></dt>
+	<dd>Nam vestibulum ullamcorper lacus ac condimentum. Vestibulum rutrum purus ac purus molestie placerat. Maecenas eu iaculis nibh, vel venenatis orci. Nulla sed purus vel ex pharetra cursus. Nullam vel turpis vel leo vehicula aliquet. Integer facilisis semper orci, nec luctus nulla convallis hendrerit. Maecenas nulla elit, pharetra non urna ac, rhoncus pharetra risus. Curabitur gravida tristique sem vitae mattis.</dd>
+	<dt><a href=""></a></dt>
+	<dd>Nam vestibulum ullamcorper lacus ac condimentum. Vestibulum rutrum purus ac purus molestie placerat. Maecenas eu iaculis nibh, vel venenatis orci. Nulla sed purus vel ex pharetra cursus. Nullam vel turpis vel leo vehicula aliquet. Integer facilisis semper orci, nec luctus nulla convallis hendrerit. Maecenas nulla elit, pharetra non urna ac, rhoncus pharetra risus. Curabitur gravida tristique sem vitae mattis.</dd>
+	</dl>
+
+</div>
+</main>
+<footer>
+
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
